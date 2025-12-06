@@ -1,0 +1,23 @@
+package factory;
+
+import product.ProduitA;
+import product.ProduitA2;
+import product.ProduitB;
+import product.ProduitB2;
+import product.ProduitC;
+import product.ProduitC2;
+
+public class ProduitFactory2 implements IProduitFactory {
+    public ProduitA getProduitA() {
+        return new ProduitA2();
+    }
+
+    public ProduitB getProduitB() {
+        return new ProduitB2();
+    }
+
+    public ProduitC getProduitC() {
+        return new ProduitC2();
+    }
+}
+
